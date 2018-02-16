@@ -37,7 +37,10 @@ client.on('message', message => {
  if (command===prefix + "bestest") 
     message.channel.send("Heropon Riki Bestest!");                       
  if (command===prefix + "dmtest")
-    message.author.send("success!")
+    message.author.send("success!");
+ if(command===prefix + "echo")
+    message.channel.send(parameters1);
+  
 });
 // Log our bot in
 client.login(process.env.SECRET);
