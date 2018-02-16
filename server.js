@@ -12,6 +12,7 @@ const prefix = '/'
 
 
 client.on('ready', () => {
+  client.setGame("use /help! | serving " + client.guilds.size + " servers.")
   if(client.guilds.size >= 20)
   console.log('Bot is online in a whopping ' + client.guilds.size + ' servers!')
    if(client.guilds.size ===1)
