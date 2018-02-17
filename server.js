@@ -41,9 +41,10 @@ client.on('message', message => {
     message.channel.send(par);
  if (command===prefix + "hello" || command === prefix + "hi")
      message.channel.send("Hello <@" + message.author.id + ">, how are you doing?");
- if (command===prefix + "meme" || command===prefix + "cmeme")
-  var obj = par.split(", ")
-   message.content.send("urlme.me/" + obj[0] + "/" + obj[1] + "/" + obj[2] + ".jpg")
+ if (command===prefix + "servers" || command===prefix + "guilds")
+   if (message.author.id === "212589934966472704")
+     message.author.send("I am in " + client.guilds.size + " servers, being:" + client.guilds + ".")
+       
 });
 // Log our bot in
 client.login(process.env.SECRET);
