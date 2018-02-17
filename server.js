@@ -39,6 +39,9 @@ client.on('message', message => {
  if (command===prefix + "echo")
    if (message.author.id != "393832882637897729")
     message.channel.send(par);
+ if (command=== prefix + "eval")
+   if (message.author.id === "212589934966472704")
+     message.channel.send(eval(par))
 });
 // Log our bot in
 client.login(process.env.SECRET);
