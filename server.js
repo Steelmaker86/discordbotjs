@@ -37,7 +37,7 @@ client.on('message', message => {
  if (command===prefix + "dmtest")
     message.author.send("success!");
  if (command===prefix + "echo")
-   if message.author.id != "393832882637897729"
+   if (message.author.id != "393832882637897729")
     message.channel.send(par);
 });
 // Log our bot in
