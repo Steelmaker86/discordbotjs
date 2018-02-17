@@ -41,7 +41,7 @@ client.on('message', message => {
     message.channel.send(par);
  if (command===prefix + "hello" || command === prefix + "hi")
      message.channel.send("Hello <@" + message.author.id + ">, how are you doing?");
- if (command===prefix + "servers" || command===prefix + "guilds")
+ if (command===prefix + "servers")
    if (message.author.id === "212589934966472704")
      if (client.guilds.size != 1)
        message.author.send("I am in " + client.guilds.size + " servers.");
