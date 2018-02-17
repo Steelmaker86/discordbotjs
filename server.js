@@ -26,7 +26,7 @@ client.on('guildMemberAdd', member => {
   member.send("Welcome to the server! We hope you enjoy your stay!")
 })
 client.on('message', message => {
-  var str = math(message.content.indexOf(" "), 1)
+  var str = math.subtract(message.content.indexOf(" "), 1)
   var command = message.content.substring(0, str)
   var parameters1 = message.content.substring(str)
  if (command===prefix + "test")
