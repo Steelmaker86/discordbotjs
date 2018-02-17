@@ -25,10 +25,9 @@ client.on('guildMemberAdd', member => {
   member.send("Welcome to the server! We hope you enjoy your stay!")
 })
 client.on('message', message => {
-  var str = message.content.split(" ", 2)
-  var command = str[1]
-  var foo = command.length + 1
-  var par = message.content.substring(foo)
+  var str = message.content.indexOf(" ")
+  var command = message.content.split(" ")[0]
+  var par = message.content.substring(str)
  if (command===prefix + "test")
     message.channel.send('my body is reggie');
  if (command===prefix + "about")
