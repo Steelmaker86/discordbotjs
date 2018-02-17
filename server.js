@@ -4,7 +4,7 @@
 
 // Import the discord.js module
 const Discord = require('discord.js');
-
+const math = require("mathjs");
 // Create an instance of a Discord client
 const client = new Discord.Client();
 // The token of your bot - https://discordapp.com/developers/applications/me
@@ -26,10 +26,9 @@ client.on('guildMemberAdd', member => {
   member.send("Welcome to the server! We hope you enjoy your stay!")
 })
 client.on('message', message => {
-  var str = message.content.split(' ')
-  var command = str[0]
-  var parameters1 = str[1]
-  var parameters2 = str[2]
+  var str = message.content.indexOf(" ")
+  var command = message.content.substring(0, math.subtract(str, 1))
+  var parameters1 = message.content.substring(str)
  if (command===prefix + "test")
     message.channel.send('my body is reggie');
  if (command===prefix + "about")
@@ -37,10 +36,9 @@ client.on('message', message => {
  if (command===prefix + "bestest") 
     message.channel.send("Heropon Riki Bestest!");                       
  if (command===prefix + "dmtest")
-    message.author.send("success!");
- if(command===prefix + "echo")
-    message.channel.send(parameters1);
-  
+    message.author.send("success!")
+if (command===prefix+"echo")
+  message.channel.send(parameters1)
 });
 // Log our bot in
 client.login(process.env.SECRET);
