@@ -42,7 +42,7 @@ client.on('message', message => {
  if (command===prefix + "hello" || command === prefix + "hi")
      message.channel.send("Hello <@" + message.author.id + ">, how are you doing?");
  if (command===prefix + "meme" || command===prefix + "cmeme")
-  var obj = par.split(", " 
+  var obj = par.split(", ")
    message.content.send("urlme.me/" + obj[0] + "/" + obj[1] + "/" + obj[2] + ".jpg")
 });
 // Log our bot in
