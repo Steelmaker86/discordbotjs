@@ -44,7 +44,7 @@ client.on('message', message => {
  if (command===prefix + "servers" || command===prefix + "guilds")
    if (message.author.id === "212589934966472704")
      if (client.guilds.size != 1)
-       message.author.send("I am in " + client.guilds.size + " servers."
+       message.author.send("I am in " + client.guilds.size + " servers.");
      if (client.guilds.size ===1)
       message.author.send("I am in 1 server.");
        
