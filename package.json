@@ -1,8 +1,8 @@
 {
-  "name": "Test",
-  "description": "Test",
+  "name": "Bot",
+  "description": "Bot",
   "version": "0.0.0",
-  "main": "bot.js",
+  "main": "server.js",
   "scripts": {
     "start": "node bot.js"
   },
