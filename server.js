@@ -44,7 +44,7 @@ client.on('message', message => {
        message.channel.send("Hello <@" + message.author.id + ">, how are you doing?");
    if (command==prefix + "invite" && command === prefix + "invite")
      message.author.send("If you would like to use me, ask <@212589934966472704> for permission, and join https://discord.gg/GZNcjhy for support and updates. Thank you for reading.");
-       message.channel.send("Check your DMs for information.");
+     message.channel.send("Check your DMs for information.");
        
 });
 // Log our bot in
