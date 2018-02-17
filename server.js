@@ -38,12 +38,12 @@ client.on('message', message => {
    if (command===prefix + "dmtest")
       message.author.send("success!");
    if (command===prefix + "echo")
-        message.channel.send(par);
+       message.channel.send(par);
    if (command===prefix + "hello" || command === prefix + "hi")
        message.channel.send("Hello <@" + message.author.id + ">, how are you doing?");
    if (command===prefix + "invite")
-     message.channel.send("Check your DMs for information.")
-     message.author.send("If you would like to use me, ask <@212589934966472704> for permission, and join https://discord.gg/GZNcjhy for support and updates. Thank you for reading.")
+       message.channel.send("Check your DMs for information.");
+       message.author.send("If you would like to use me, ask <@212589934966472704> for permission, and join https://discord.gg/GZNcjhy for support and updates. Thank you for reading.");
        
 });
 // Log our bot in
