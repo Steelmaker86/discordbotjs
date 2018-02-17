@@ -26,24 +26,24 @@ client.on('guildMemberAdd', member => {
 })
 client.on('message', message => {
   if (message.author.id != "393832882637897729")
-  var str = message.content.indexOf(" ")
-  var command = message.content.split(" ")[0]
-  var par = message.content.substring(str)
- if (command===prefix + "test")
-    message.channel.send('my body is reggie');
- if (command===prefix + "about")
-    message.channel.send("I am a discord bot created by <@212589934966472704> in node.js, i am currently in development, but will be a nice bot sooner or later! Check out my WIP website! http://benchbot.glitch.me");
- if (command===prefix + "bestest") 
-    message.channel.send("Heropon Riki Bestest!");                       
- if (command===prefix + "dmtest")
-    message.author.send("success!");
- if (command===prefix + "echo")
-    message.channel.send(par);
- if (command===prefix + "hello" || command === prefix + "hi")
-     message.channel.send("Hello <@" + message.author.id + ">, how are you doing?");
- if (command===prefix + "invite")
-   message.channel.send("Check your DMs for information.")
-   message.author.send("If you would like to use me, ask <@212589934966472704> for permission, and join https://discord.gg/GZNcjhy for support and updates. Thank you for reading.")
+    var str = message.content.indexOf(" ")
+    var command = message.content.split(" ")[0]
+    var par = message.content.substring(str)
+   if (command===prefix + "test")
+      message.channel.send('my body is reggie');
+   if (command===prefix + "about")
+      message.channel.send("I am a discord bot created by <@212589934966472704> in node.js, i am currently in development, but will be a nice bot sooner or later! Check out my WIP website! http://benchbot.glitch.me");
+   if (command===prefix + "bestest") 
+      message.channel.send("Heropon Riki Bestest!");                       
+   if (command===prefix + "dmtest")
+      message.author.send("success!");
+   if (command===prefix + "echo")
+        message.channel.send(par);
+   if (command===prefix + "hello" || command === prefix + "hi")
+       message.channel.send("Hello <@" + message.author.id + ">, how are you doing?");
+   if (command===prefix + "invite")
+     message.channel.send("Check your DMs for information.")
+     message.author.send("If you would like to use me, ask <@212589934966472704> for permission, and join https://discord.gg/GZNcjhy for support and updates. Thank you for reading.")
        
 });
 // Log our bot in
