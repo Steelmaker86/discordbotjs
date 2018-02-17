@@ -43,7 +43,7 @@ client.on('message', message => {
      message.channel.send("Hello <@" + message.author.id + ">, how are you doing?");
  if (command===prefix + "servers" || command===prefix + "guilds")
    if (message.author.id === "212589934966472704")
-     message.author.send("I am in " + client.guilds.size + " servers.")
+     message.author.send("I am in " + client.guilds.size + " servers, being: " + client.guilds.toString + ".")
        
 });
 // Log our bot in
