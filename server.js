@@ -46,11 +46,9 @@ client.on('message', message => {
    message.channel.send("Currently, I am in development, if you would like to invite me, please ask <@212589934966472704> for permission.");
  if (command===prefix + "ping")
    stopwatch.start();
+   message.channel.send("Pong! Took" + stopwatch.elapsedMilliseconds "ms!");
    stopwatch.stop
-   var lat = stopwatch.elapsedMilliseconds
-   message.channel.send("pong! Took" + lat "ms!");
    return
-       
 });
 // Log our bot in
 client.login(process.env.SECRET);
