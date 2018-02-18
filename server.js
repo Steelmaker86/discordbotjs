@@ -8,7 +8,8 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 // The token of your bot - https://discordapp.com/developers/applications/me
 const prefix = '/'
-
+const Stopwatch = require("node-stopwatch").Stopwatch;
+const stopwatch = Stopwatch.create();
 
 client.on('ready', () => {
   if(client.guilds.size >= 20)
@@ -43,6 +44,11 @@ client.on('message', message => {
    message.channel.send("Hello <@" + message.author.id + ">, how are you doing?");
  if (command===prefix + "invite")
    message.channel.send("Currently, I am in development, if you would like to invite me, please ask <@212589934966472704> for permission.");
+ if (command===prefix + "ping")
+   stopwatch.start();
+   var lat = stopwatch.elapsedMilliseconds
+   stopwatch.stop();
+   message.channel.send(lat);
    
        
 });
