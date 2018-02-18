@@ -41,6 +41,8 @@ client.on('message', message => {
      message.channel.send(par);
  if (command===prefix + "hello" || command === prefix + "hi")
    message.channel.send("Hello <@" + message.author.id + ">, how are you doing?");
+ if (command===prefix + "invite")
+   message.channel.send("Currently, I am in development, if you would like to invite me, please ask <@212589934966472704> for permission.");
    
        
 });
