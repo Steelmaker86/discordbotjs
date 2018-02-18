@@ -26,7 +26,7 @@ client.on('guildMemberAdd', member => {
 })
 client.on('message', message => {
   var str = message.content.indexOf(" ")
-  var command = message.content.substring(0, str-1)
+  var command = message.content.substring(0, str)
   var par = message.content.substring(str)
  if (command===prefix + "test")
     message.channel.send('my body is reggie');
@@ -39,7 +39,7 @@ client.on('message', message => {
  if (command===prefix + "echo")
    message.channel.send(par);
  if (command===prefix + "hello" || command === prefix + "hi")
-     message.channel.send("Hello <@" + message.author.id + ">, how are you doing?");
+   message.channel.send("Hello <@" + message.author.id + ">, how are you doing?");
    
        
 });
