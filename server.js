@@ -44,12 +44,6 @@ client.on('message', message => {
    message.channel.send("Hello <@" + message.author.id + ">, how are you doing?");
  if (command===prefix + "invite")
    message.channel.send("Currently, I am in development, if you would like to invite me, please ask <@212589934966472704> for permission.");
- if (command===prefix + "ping")
-   stopwatch.start();
-   var l = stopwatch.elapsedMilliseconds
-   stopwatch.stop();
-   message.channel.send("Pong! Took" + lat + "ms!");
-   return
 });
 // Log our bot in
 client.login(process.env.SECRET);
