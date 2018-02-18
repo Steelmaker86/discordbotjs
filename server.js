@@ -26,7 +26,7 @@ client.on('guildMemberAdd', member => {
 })
 client.on('message', message => {
   var str = message.content.indexOf(" ")
-  var command = message.content.substring(0, str)
+  var command = message.content.split(" ")[0]
   var par = message.content.substring(str)
  if (command===prefix + "test")
     message.channel.send('my body is reggie');
