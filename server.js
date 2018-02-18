@@ -48,7 +48,6 @@ client.on('message', message => {
    stopwatch.start();
    message.channel.send("Pong! Took" + stopwatch.elapsedMilliseconds "ms!");
    stopwatch.stop
-   return
 });
 // Log our bot in
 client.login(process.env.SECRET);
