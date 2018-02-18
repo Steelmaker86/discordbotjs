@@ -49,7 +49,7 @@ client.on('message', message => {
    stopwatch.stop
    var lat = stopwatch.elapsedMilliseconds
    message.channel.send("pong! Took" + lat "ms!");
-   
+   return
        
 });
 // Log our bot in
