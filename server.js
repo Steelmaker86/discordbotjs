@@ -1,10 +1,8 @@
 /*
   A bot that welcomes new guild members when they join
 */
-const Stopwatch = require("node-stopwatch").Stopwatch;
 
 
-const stopwatch = Stopwatch.create();
 // Import the discord.js module
 const Discord = require('discord.js');
 // Create an instance of a Discord client
