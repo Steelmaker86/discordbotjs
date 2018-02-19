@@ -39,7 +39,7 @@ client.on('message', message => {
    if (command===prefix + "dmtest")
       message.author.send("success!");
    if (command===prefix + "echo")
-     if (message.author.id != "393832882637897729)
+     if (message.author.id != "393832882637897729")
        if (message.author.id == "319139711836880896" || message.author.id == "212589934966472704")
          message.channel.send(par);
    if (command===prefix + "hello" || command === prefix + "hi")
