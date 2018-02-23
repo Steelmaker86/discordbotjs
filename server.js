@@ -50,11 +50,7 @@ client.on('message', message => {
      message.channel.send("Hello <@" + message.author.id + ">, how are you doing?");
    if (command===prefix + "invite")
      message.channel.send("Currently, I am in development, if you would like to invite me, please ask <@212589934966472704> for permission.");
-   if (command===prefix + "invite")
-     message.channel.send({embed :
-     color: e60000,
-     image: "http://urlme.me/" + par.split(", ")[0] + "/" + par.split(", ")[1] + "/" + par.split(", ")[2]
-     });
+
 });
 // Log our bot in
 client.login(process.env.SECRET);
