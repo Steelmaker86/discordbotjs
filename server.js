@@ -7,7 +7,6 @@
 const Discord = require('discord.js');
 // Create an instance of a Discord client
 const client = new Discord.Client();
-const rich = new Discord.RichEmbed();
 // The token of your bot - https://discordapp.com/developers/applications/me
 const prefix = '/'
 const Stopwatch = require("node-stopwatch").Stopwatch;
