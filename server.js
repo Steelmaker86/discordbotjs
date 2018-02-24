@@ -21,11 +21,10 @@ client.on('ready', () => {
     console.log('Bot is online in '+ client.guilds.size + ' servers.')
 });
 client.on('guildMemberAdd', member => {
-   const channel = member.guild.channels.find('name', 'welcomes');
-  member.addrole("member")
-  channel.send("Everybody welcome to the server, " + member + '!')
-  member.send("Welcome to the server! We hope you enjoy your stay!")
-})
+  const channel = member.guild.channels.find('name', 'welcomes');
+  member.addrole(member.guild.roles.find("name", "member"));
+  channel.send(`Welcome to the server, ${member}!`);
+});
 client.on('message', message => {
   if (message.author.bot)
     return
