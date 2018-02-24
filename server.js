@@ -5,7 +5,7 @@
 
 // Import the discord.js module
 const Discord = require('discord.js');
-const a = new Discord.WebhookClient(process.env.Id, procsss.env.Token);
+const a = new Discord.WebhookClient(process.env.ID, procsss.env.TOKEN);
 // Create an instance of a Discord client
 const client = new Discord.Client();
 // The token of your bot - https://discordapp.com/developers/applications/me
