@@ -5,7 +5,7 @@
 
 // Import the discord.js module
 const Discord = require('discord.js');
-const a = new Discord.WebhookClient("416754069126774786", process.env.TOKEN);
+
 // Create an instance of a Discord client
 const client = new Discord.Client();
 // The token of your bot - https://discordapp.com/developers/applications/me
@@ -49,9 +49,6 @@ client.on('message', message => {
      message.channel.send("Hello <@" + message.author.id + ">, how are you doing?");
    if (command===prefix + "invite")
      message.channel.send("Currently, I am in development, if you would like to invite me, please ask <@212589934966472704> for permission.");
-   if (command===prefix + "startmeet")
-     if (message.author.id === "212589934966472704");
-       a.send("Hear ye hear ye! A meeting has begun!");
 });
 // Log our bot in
 client.login(process.env.SECRET);
