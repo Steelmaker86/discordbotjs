@@ -12,7 +12,7 @@ const client = new Discord.Client();
 const prefix = '/'
 const Stopwatch = require("node-stopwatch").Stopwatch;
 const stopwatch = Stopwatch.create();
-const jokes = ["Why do Java programmers wear glasses? Because they can't C#!", "What did the experienced programmer say to the ignorant one? Git good. (I wanna kill myself)"];
+const jokes = ["Why do Java programmers wear glasses? Because they can't C#!", "What did the experienced programmer say to the ignorant one? Git good."];
 
 client.on('ready', () => {
   if(client.guilds.size >= 20)
