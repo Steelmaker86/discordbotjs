@@ -51,7 +51,7 @@ client.on('message', message => {
    if (command===prefix + "invite")
      message.channel.send("Currently, I am in development, if you would like to invite me, please ask <@212589934966472704> for permission.");
    if (command===prefix + "joke")
-     message.channel.send([Math.floor(Math.random() * jokes.length)]);
+     message.channel.send(jokes[Math.floor(Math.random() * jokes.length)]);
 
 });
 // Log our bot in
