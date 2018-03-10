@@ -12,6 +12,7 @@ const client = new Discord.Client();
 const prefix = '/'
 const Stopwatch = require("node-stopwatch").Stopwatch;
 const stopwatch = Stopwatch.create();
+const jokes = ["Why do Java programmers wear glasses? Because they can't C#!", 
 
 client.on('ready', () => {
   if(client.guilds.size >= 20)
@@ -42,13 +43,16 @@ client.on('message', message => {
    if (command===prefix + "dmtest")
       message.author.send("success!");
    if (command===prefix + "echo")
+     if (message.author.id != "393832882637897729")
        if (message.author.id == "319139711836880896" || message.author.id == "212589934966472704")
          message.channel.send(par);
    if (command===prefix + "hello" || command === prefix + "hi")
      message.channel.send("Hello <@" + message.author.id + ">, how are you doing?");
    if (command===prefix + "invite")
      message.channel.send("Currently, I am in development, if you would like to invite me, please ask <@212589934966472704> for permission.");
+   if (command===prefix + "joke")
+     message.channel.send([Math.floor(Math.random() * jokes.length)]);
+
 });
 // Log our bot in
 client.login(process.env.SECRET);
-client.login(process.env.TOKEN);
