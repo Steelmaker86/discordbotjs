@@ -1,6 +1,4 @@
-/*
-  A bot that welcomes new guild members when they join
-*/
+
 
 
 // Import the discord.js module
@@ -15,7 +13,7 @@ const prefix = '/'
 client.on('ready', () => {
   if(client.guilds.size >= 20)
   console.log('Bot is online in a whopping ' + client.guilds.size + ' servers!')
-   if(client.guilds.size ===1)
+   if(client.guilds.size===1)
     console.log('Bot is in 1 server')
   if(client.guilds.size < 20 && client.guilds.size < 1)
     console.log('Bot is online in '+ client.guilds.size + ' servers.')
@@ -26,9 +24,7 @@ client.on('guildMemberAdd', member => {
   channel.send(`Welcome to the server, ${member}!`);
 });
 client.on('message', message => {
-  if (message.author.bot)
-    break
-  else
+  if (message.author.bot === false)
     var str = message.content.indexOf(" ")
     var command = message.content.split(" ")[0]
     var par = message.content.substring(str)
@@ -48,6 +44,8 @@ client.on('message', message => {
      message.channel.send("Hello <@" + message.author.id + ">, how are you doing?");
    if (command===prefix + "invite")
      message.channel.send("Currently, I am in development, if you would like to invite me, please ask <@212589934966472704> for permission.");
+
+
 });
 // Log our bot in
 client.login(process.env.SECRET);
