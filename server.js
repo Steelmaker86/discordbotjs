@@ -48,7 +48,7 @@ client.on('message', message => {
      var m = par.split(", ");
      message.channel.send({embed :
                            color: e60000,
-                           image: `http://urlme.me/${m[1]}/${m[2]}/${m2}`
+                           image: `http://urlme.me/${m[1]}/${m[2]}/${m2}.jpg`
                           });
 
 });
