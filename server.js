@@ -6,6 +6,7 @@ const Discord = require('discord.js');
 
 // Create an instance of a Discord client
 const client = new Discord.Client();
+const rich = new Discord.Embed();
 // The token of your bot - https://discordapp.com/developers/applications/me
 const prefix = '/'
 
@@ -45,12 +46,8 @@ client.on('message', message => {
    if (command===prefix + "invite")
      message.channel.send("Currently, I am in development, if you would like to invite me, please ask <@212589934966472704> for permission.");
    if (command===prefix + "cmeme")
-     var m = par.split(", ");
-     message.channel.send({embed :
-                           color: e60000,
-                           image: `http://urlme.me/${m[1]}/${m[2]}/${m2}.jpg`
-                          });
-
+     var embed = rich.setImage("http://urlme.me/"+par.split(", ")[0]+"/"+par.split(", ")[1]+"/"+par.split(", ")[2]+".jpg"
+     message.channel.send(
 });
 // Log our bot in
 client.login(process.env.SECRET);
