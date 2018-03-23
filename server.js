@@ -20,9 +20,12 @@ client.on('ready', () => {
     console.log('Bot is online in '+ client.guilds.size + ' servers.')
 });
 client.on('guildMemberAdd', member => {
-  const channel = member.guild.channels.find('name', 'welcomes');
-  member.addrole(member.guild.roles.find("name", "member"));
-  channel.send(`Welcome to the server, ${member}!`);
+  if (member.id === "315653221051793410")
+    member.send("You, have been kicked for the reason: 'annoying arse'"
+    member.kick("gay arse");
+  else
+    const channel = member.guild.channels.find('name', 'welcomes');
+    channel.send(`Welcome to the server, ${member}!`);
 });
 client.on('message', message => {
   if (message.author.bot === false)
@@ -45,9 +48,6 @@ client.on('message', message => {
      message.channel.send("Hello <@" + message.author.id + ">, how are you doing?");
    if (command===prefix + "invite")
      message.channel.send("Currently, I am in development, if you would like to invite me, please ask <@212589934966472704> for permission.");
-   if (command===prefix + "cmeme")
-     var embed = rich.setImage("http://urlme.me/"+par.split(", ")[0]+"/"+par.split(", ")[1]+"/"+par.split(", ")[2]+".jpg");
-     message.channel.send({embed});
 });
 // Log our bot in
 client.login(process.env.SECRET);
