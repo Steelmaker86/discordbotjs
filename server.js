@@ -26,7 +26,7 @@ client.on('guildMemberAdd', member => {
     channel.send(`Welcome to the server, ${member}!`);
 });
 client.on('message', message => {
-  if (message.author.bot != true)
+  if (message.author.id != "393832882637897729")
     var str = message.content.indexOf(" ")
     var command = message.content.split(" ")[0]
     var par = message.content.substring(str)
@@ -39,9 +39,8 @@ client.on('message', message => {
    if (command===prefix + "dmtest")
       message.author.send("success!");
    if (command===prefix + "echo")
-     if (message.author.id != "393832882637897729")
-       if (message.author.id == "319139711836880896" || message.author.id == "212589934966472704")
-         message.channel.send(par);
+     if (message.author.id == "319139711836880896" || message.author.id == "212589934966472704")
+       message.channel.send(par);
    if (command===prefix + "hello" || command === prefix + "hi")
      message.channel.send("Hello <@" + message.author.id + ">, how are you doing?");
    if (command===prefix + "invite")
