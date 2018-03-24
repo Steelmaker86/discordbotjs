@@ -12,7 +12,7 @@ const prefix = '/'
 
 
 client.on('ready', () => {
-  client.user.setStatus('dnd');
+  client.user.setPresence({ activity: { name: 'Jab Battles' }, status: 'dnd' });
   hook.send("My body is reggie");
   if(client.guilds.size >= 20)
   console.log('Bot is online in a whopping ' + client.guilds.size + ' servers!')
