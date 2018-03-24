@@ -26,10 +26,7 @@ client.on('guildMemberAdd', member => {
     channel.send(`Welcome to the server, ${member}!`);
 });
 client.on('message', message => {
-  if (message.author.bot){
-    break
-    }
-  else {
+  if (message.author.bot != true)
     var str = message.content.indexOf(" ")
     var command = message.content.split(" ")[0]
     var par = message.content.substring(str)
@@ -50,6 +47,6 @@ client.on('message', message => {
    if (command===prefix + "invite")
      message.channel.send("Currently, I am in development, if you would like to invite me, please ask <@212589934966472704> for permission.");
 
- }});
+ });
 // Log our bot in
 client.login(process.env.SECRET);
