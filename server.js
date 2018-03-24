@@ -46,7 +46,7 @@ client.on('message', message => {
      message.channel.send("Hello <@" + message.author.id + ">, how are you doing?");
    if (command===prefix + "invite")
      message.channel.send("Currently, I am in development, if you would like to invite me, please ask <@212589934966472704> for permission.");
-   if (command===prefix + "shutdown
+   if (command===prefix + "shutdown");
        if (message.author.id === "212589934966472704")
          message.channel.send("Terminating at your will...");
          client.destroy();
