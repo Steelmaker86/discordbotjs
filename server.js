@@ -6,7 +6,7 @@ const Discord = require('discord.js');
 
 // Create an instance of a Discord client
 const client = new Discord.Client();
-const hook = new Discord.WebhookClient(process.env.ID, process.env.TOKEN);
+const hook = new Discord.WebhookClient("426893085356720129", process.env.TOKEN);
 // The token of your bot - https://discordapp.com/developers/applications/me
 const prefix = '/'
 
