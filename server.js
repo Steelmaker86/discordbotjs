@@ -21,10 +21,6 @@ client.on('ready', () => {
     console.log('Bot is online in '+ client.guilds.size + ' servers.')
 });
 client.on('guildMemberAdd', member => {
-  if (member.id === "315653221051793410")
-    member.send("You, have been kicked for the reason: 'annoying person'");
-    member.kick("Gay Arse");
-  else
     const channel = member.guild.channels.find('name', 'welcomes');
     channel.send(`Welcome to the server, ${member}!`);
 });
