@@ -4,8 +4,8 @@
 // Import the discord.js module
 const Discord = require('discord.js');
 
-// Create an instance of a Discord client
-const client = new Discord.Client();
+// Create an instance of 
+const client = new Discord.Client(); 
 const hook = new Discord.WebhookClient("426893085356720129", process.env.TOKEN);
 // The token of your bot - https://discordapp.com/developers/applications/me
 const prefix = '/'
@@ -22,8 +22,8 @@ client.on('ready', () => {
 });
 client.on('guildMemberAdd', member => {
   if (member.id === "315653221051793410")
-    member.send("You, have been kicked for the reason: 'annoying arse'"
-    member.kick("gay arse");
+    member.send("You, have been kicked for the reason: 'annoying person'");
+    member.kick("Gay Arse");
   else
     const channel = member.guild.channels.find('name', 'welcomes');
     channel.send(`Welcome to the server, ${member}!`);
