@@ -6,12 +6,13 @@ const Discord = require('discord.js');
 
 // Create an instance of a Discord client
 const client = new Discord.Client();
-const rich = new Discord.Embed();
+const hook = new Discord.WebhookClient(process.env.ID, process.env.TOKEN);
 // The token of your bot - https://discordapp.com/developers/applications/me
 const prefix = '/'
 
 
 client.on('ready', () => {
+  hook.send("My body is reggie");
   if(client.guilds.size >= 20)
   console.log('Bot is online in a whopping ' + client.guilds.size + ' servers!')
    if(client.guilds.size===1)
