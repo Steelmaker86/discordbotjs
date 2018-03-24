@@ -11,6 +11,7 @@ const hook = new Discord.WebhookClient("426893085356720129", process.env.TOKEN);
 // The token of your bot - https://discordapp.com/developers/applications/me
 const prefix = '/'
 const music = new Music(client, {
+  prefix: '/',
   youtubeKey: process.env.KEY
 });
 
