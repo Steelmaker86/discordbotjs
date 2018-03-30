@@ -58,10 +58,10 @@ client.on('message', message => {
      if (message.author.id==="212589934966472704")
        try {
          var res = eval(par)
-         if (res && res.toString().toLowerCase.includes(process.env.SECRET.toLowerCase())) result = "has secret information, censored.";
-         message.channel.sendMessage("```js\nInput:\n" + functionToEval + "\n\nOutput:\n" + result + "```");
+         if (res && res.toString().toLowerCase.includes(process.env.SECRET.toLowerCase())) res = "has secret information, censored.";
+         message.channel.sendMessage("```js\nInput:\n" + par + "\n\nOutput:\n" + res + "```");
       } catch (err) {
-        message.channel.sendMessage("```js\nInput:\n" + functionToEval + "\n\nError:\n" + err.message + "```");
+        message.channel.sendMessage("```js\nInput:\n" + par + "\n\nError:\n" + err.message + "```");
         }
  });
 // Log our bot in
