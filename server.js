@@ -14,7 +14,8 @@ const music = new Music(client, {
   ownerOverMember: true,
   botOwner: "212589934966472704",
   prefix: '/',
-  youtubeKey: process.env.KEY
+  youtubeKey: process.env.KEY,
+  enableQueueStat: true
 });
 
 
