@@ -13,6 +13,6 @@
     "request": "2.81.0",
     "node-opus": "0.2.7",
     "ffmpeg-binaries": "3.2.2-3",
-    "discord.js-musicbot-addon": "Steelmaker86/discord.js-musicbot-addon"
+    "discord.js-musicbot-addon": "1.10.3"
   }
 }
