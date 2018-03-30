@@ -12,7 +12,7 @@ const hook = new Discord.WebhookClient("426893085356720129", process.env.TOKEN);
 const prefix = '/'
 const music = new Music(client, {
   ownerOverMember: true,
-  botOwner: "212589934966472704",
+  botOwner: '212589934966472704',
   prefix: '/',
   youtubeKey: process.env.KEY,
   enableQueueStat: true
