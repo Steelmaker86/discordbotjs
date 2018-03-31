@@ -63,10 +63,6 @@ client.on('message', message => {
       } catch (err) {
         message.channel.send("```js\nInput:\n" + par + "\n\nError:\n" + err.message + "```");
         }
-    if (command===prefix + "cmeme")
-      var meme = par.split(", ");
-      var embed = new Discord.RichEmbed().setAuthor("Your meme result", message.author.avatarURL).setColor("#e60000").setImage(`http://urlme.me/${meme[0]}/${meme[1]}/${meme[2]}.jpg`);
-      message.channel.send({embed});
- });
+
 // Log our bot in
 client.login(process.env.SECRET);
