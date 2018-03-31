@@ -58,7 +58,7 @@ client.on('message', message => {
      if (message.author.id==="212589934966472704")
        try {
          var res = eval(par)
-         if (par.includes("process.env.SECRET"); || par.includes("process.env.TOKEN"); || par.includes("process.env.KEY")) res = "Contains unauthorized information, censored.";
+         if (par.includes("process.env.")) res = "Contains unauthorized information, censored.";
            message.channel.send("```js\nInput:\n" + par + "\n\nOutput:\n" + res + "```");
       } catch (err) {
         message.channel.send("```js\nInput:\n" + par + "\n\nError:\n" + err.message + "```");
