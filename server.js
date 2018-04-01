@@ -35,7 +35,7 @@ client.on('guildMemberAdd', member => {
     channel.send(`Welcome to the server, ${member}!`);
 });
 client.on('message', message => {
-    if (
+  if (message.author.bot) return;
   var str = message.content.indexOf(" ")
   var command = message.content.split(" ")[0]
   var par = message.content.substring(str)
