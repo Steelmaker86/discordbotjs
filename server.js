@@ -42,15 +42,5 @@ client.on('message', message => {
     message.channel.send("Hello <@" + message.author.id + ">, how are you doing?")
  if (command===prefix + "invite")
     message.channel.send("Currently, I am in development, if you would like to invite me, please ask <@212589934966472704> for permission.");
- if (command===prefix + "eval")
-   if (message.author.id==="212589934966472704")
-     try {
-       var res = eval(par)
-       if (par.includes("process.env.")) res = "Contains unauthorized information, censored.";
-         message.channel.send("```js\nInput:\n" + par + "\n\nOutput:\n" + res + "```");
-    } catch (err) {
-      message.channel.send("```js\nInput:\n" + par + "\n\nError:\n" + err.message + "```");
-      }
-
 // Log our bot in
 client.login(process.env.SECRET);
