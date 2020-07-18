@@ -3,19 +3,7 @@ const Discord = require("discord.js");
 // Create an instance of a Discord client
 const client = new Discord.Client();
 // The token of your bot - https://discordapp.com/developers/applications/me
-const http = require("http");
-const express = require("express");
-const app = express();
-console.log("on")
 
-app.get("/", (request, response) => {
-  console.log(Date.now() + " Ping Received");
-  response.sendStatus(200);
-});
-app.listen(process.env.PORT);
-setInterval(() => {
-  http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
-}, 280000);
 const prefix = ">";
 client.on("message", message => {
   const args = message.content
