@@ -48,6 +48,9 @@ client.on("message", message => {
         message.channel.send(body);
         });
         break;
+      case "ship":
+        message.channel.send("nah");
+        break;
      }
 });
 client.login(process.env.SECRET);
