@@ -54,7 +54,7 @@ client.on("message", message => {
         message.channel.send("Oi ya wanna fooken ship real people mate no");
         break;
       case "st":
-        if (arg[0] <= 280)
+        if (args[0] <= 280)
           message.channel.send(`https://gbf.wiki/images/c/c4/Stamp${arg[0]}.png`);
           break;
      }
