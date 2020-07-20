@@ -55,7 +55,7 @@ client.on("message", message => {
         break;
       case "st":
         if (args[0] <= 280)
-          message.channel.send(`https://gbf.wiki/images/c/c4/Stamp${args[0]}.png`);
+          message.channel.send(`http://game-a1.granbluefantasy.jp/assets_en/img/sp/assets/stamp/full/stamp${args[0]}.png`);
           break;
      }
 });
