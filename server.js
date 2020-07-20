@@ -57,9 +57,6 @@ client.on("message", message => {
         if (arg[0] <= 280)
           message.channel.send(`https://gbf.wiki/images/c/c4/Stamp${arg[0]}.png`);
           break;
-        else
-          message.channel.send("ID too high")
-          break;
      }
 });
 client.login(process.env.SECRET);
