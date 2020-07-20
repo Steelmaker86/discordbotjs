@@ -20,7 +20,9 @@ client.on("message", message => {
   let isBotOwner = message.author.id == "212589934966472704";
   const command = args.shift().toLowerCase();
   if (message.author.bot === false)
-  if (message.content.startsWith(">"))
+  if (message.content.startsWith("ship_now"))
+    message.channel.send("ew disgusting");
+  else if (message.content.startsWith(">"))
     switch (command) {
       case "meme":
         let arg = args.join("_").split(";_");
@@ -49,7 +51,7 @@ client.on("message", message => {
         });
         break;
       case "ship":
-        message.channel.send("nah");
+        message.channel.send("Oi ya wanna fooken ship real people mate no");
         break;
      }
 });
