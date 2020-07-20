@@ -6,6 +6,10 @@ const client = new Discord.Client();
 const request = require('request');
 
 
+client.on("ready", () => {
+  client.user.setPresence({ activity: { name: 'with the boys' }, status: 'idle' })
+});
+      
 
 const prefix = ">";
 client.on("message", message => {
