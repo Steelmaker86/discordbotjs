@@ -54,7 +54,7 @@ client.on("message", message => {
         message.channel.send("Oi ya wanna fooken ship real people mate no");
         break;
       case "st":
-        if (args[0] <= 280)
+        if (args[0] <= 287)
           message.channel.send(`http://game-a1.granbluefantasy.jp/assets_en/img/sp/assets/stamp/full/stamp${args[0]}.png`);
           break;
      }
