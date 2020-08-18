@@ -59,7 +59,7 @@ client.on("message", message => {
         if (args[0] <= 287)
           message.channel.send(`http://game-a1.granbluefantasy.jp/assets_en/img/sp/assets/stamp/full/stamp${args[0]}.png`);
           break;
-      case "send"
+      case "send":
         if (message.author.id === "212589934966472704")
         botchannel.send(args.join(" "))
      }
