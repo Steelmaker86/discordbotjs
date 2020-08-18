@@ -39,7 +39,7 @@ client.on("message", message => {
         message.channel.send("aa");
         break;
       case "echo":
-        if (message.author.id === "212589934966472704")
+        if (isBotOwner)
           message.delete();
           message.channel.send(args.join(" "));
           break;
@@ -60,8 +60,8 @@ client.on("message", message => {
           message.channel.send(`http://game-a1.granbluefantasy.jp/assets_en/img/sp/assets/stamp/full/stamp${args[0]}.png`);
           break;
       case "send":
-        if (message.author.id === "212589934966472704")
-        botchannel.send(args.join(" "))
+        if(isBotOwner)
+        botchannel.send(args.join(" "));
      }
 });
 client.login(process.env.SECRET);
