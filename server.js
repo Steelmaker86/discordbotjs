@@ -61,7 +61,7 @@ client.on("message", message => {
           break;
       case "send":
         if(isBotOwner)
-        botchannel.send(args.join(" "));
+        console.log(args)
      }
 });
 client.login(process.env.SECRET);
