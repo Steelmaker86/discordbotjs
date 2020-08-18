@@ -9,7 +9,7 @@ const request = require('request');
 client.on("ready", () => {
   client.user.setPresence({ activity: { name: 'with the boys' }, status: 'idle' })
   client.channels.cache.get('745331076573954049').send("bot is online")
-  var botchannel = client.channels.cache.get('745261295368011816');
+  var botchannel = client.channels.get('745261295368011816');
 });
       
 
