@@ -8,6 +8,8 @@ const request = require('request');
 
 client.on("ready", () => {
   client.user.setPresence({ activity: { name: 'with the boys' }, status: 'idle' })
+  client.channels.cache.get('745331076573954049').send("bot is online")
+  var botchannel== client.channels.cache.get('745261295368011816');
 });
       
 
@@ -57,6 +59,9 @@ client.on("message", message => {
         if (args[0] <= 287)
           message.channel.send(`http://game-a1.granbluefantasy.jp/assets_en/img/sp/assets/stamp/full/stamp${args[0]}.png`);
           break;
+      case "send"
+        if (message.author.id === "212589934966472704")
+        botchannel.send(args.join(" "))
      }
 });
 client.login(process.env.SECRET);
