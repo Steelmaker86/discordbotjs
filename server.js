@@ -7,7 +7,7 @@ const request = require('request');
 
 
 client.on("ready", () => {
-  client.user.setPresence({ activity: { name: 'with the boys' }, status: 'idle' })
+  client.user.setPresence({ activity: { name: 'with the boys' }, status: 'offline' })
   client.channels.cache.get('745331076573954049').send("bot is online")
 });
       
