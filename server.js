@@ -9,6 +9,7 @@ const request = require('request');
 client.on("ready", () => {
   client.user.setPresence({ activity: { name: 'with the boys' }, status: 'idle' })
   client.channels.cache.get('745331076573954049').send("bot is online")
+  console.log(client.guilds)
 });
       
 
@@ -18,7 +19,7 @@ client.on("message", message => {
     .slice(prefix.length)
     .trim()
     .split(/ +/g);
-  let isBotOwner = message.author.id == "212589934966472704";
+  let isBotOwner = message.author.id == process.env.ID;
   const command = args.shift().toLowerCase();
   if (message.author.bot === false)
   if (message.content.startsWith("ship_now"))
