@@ -29,6 +29,11 @@
        "name": "bonk",
        "desc": "bonk",
        "synt": "bonk"
+     },
+     {
+       "name": "help",
+       "desc": "Displays this message. For more details on a specific command, use >help [command]",
+       "synt": ">help {command}"
      }
      ]
 }
