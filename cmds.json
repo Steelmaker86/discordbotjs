@@ -1,1 +1,34 @@
-
+{
+   "cmds"  : [
+     {
+       "name": "meme",
+       "desc": "generates a meme using urlme.me",
+       "synt": ">meme [par1]; [par2]; [par3]"
+     },
+     {
+       "name": "echo",
+       "desc": "echoes everything said after the command input (only can be used by owner)",
+       "synt": ">echo [text]"
+     },
+     {
+       "name": "cow",
+       "desc": "sends cow",
+       "synt": ">cow"
+     },
+     {
+       "name": "iq",
+       "desc": "sends an ai-generated inspiring quote",
+       "synt": ">iq"
+     },
+     {
+       "name": "st",
+       "desc": "sends a stamp/sticker from granblue",
+       "synt": ">st [number between 1 and 190]"
+     },
+     {
+       "name": "bonk",
+       "desc": "bonk",
+       "synt": "bonk"
+     }
+     ]
+}
