@@ -32,12 +32,6 @@ client.on("message", message => {
           "http://urlme.me/" + arg[0] + "/" + arg[1] + "/" + arg[2] + ".jpg"
         );
         break;
-      case "blah":
-        message.channel.send("Meh.");
-        break;
-      case "send":
-        message.channel.send("aa");
-        break;
       case "echo":
         if (isBotOwner)
           message.delete();
