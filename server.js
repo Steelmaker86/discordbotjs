@@ -54,8 +54,12 @@ client.on("message", message => {
           message.channel.send(`http://game-a1.granbluefantasy.jp/assets_en/img/sp/assets/stamp/full/stamp${args[0]}.png`);
           break;
       case "bonk":
-        message.channel.send(process.env.KEY)
-        break
+        message.channel.send(process.env.KEY);
+        break;
+      case "guilds":
+        if(isBotOwner)
+          message.author.send(client.guilds);
+        break;
      }
 });
 client.login(process.env.SECRET);
