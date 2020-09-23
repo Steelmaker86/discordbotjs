@@ -56,10 +56,6 @@ client.on("message", message => {
       case "bonk":
         message.channel.send(process.env.KEY);
         break;
-      case "guilds":
-        if(isBotOwner)
-          message.author.send(client.guilds);
-        break;
      }
 });
 client.login(process.env.SECRET);
