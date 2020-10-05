@@ -56,6 +56,9 @@ client.on("message", message => {
       case "bonk":
         message.channel.send(process.env.KEY);
         break;
+      case "bonk2":
+        message.channel.send(process.env.BONK);
+        break;
      }
 });
 client.login(process.env.SECRET);
