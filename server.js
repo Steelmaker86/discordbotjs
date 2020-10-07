@@ -59,6 +59,9 @@ client.on("message", message => {
       case "bonk2":
         message.channel.send(process.env.BONK);
         break;
+      case "aaaa":
+        message.channel.send("https://discordapp.com/channels/733757543624736782/733757544304083098/763457110868230184")
+        break;
      }
 });
 client.login(process.env.SECRET);
