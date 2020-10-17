@@ -62,6 +62,9 @@ client.on("message", message => {
       case "aaaa":
         message.channel.send("https://discordapp.com/channels/733757543624736782/733757544304083098/763457110868230184")
         break;
+      case "thethird":
+        message.channel.send("https://cdn.discordapp.com/attachments/765761162402070528/767112368006103070/video0.mov")
+        break;
      }
 });
 client.login(process.env.SECRET);
