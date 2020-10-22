@@ -40,12 +40,12 @@ client.on("message", message => {
       case "cow":
         message.channel.send("https://images-ext-2.discordapp.net/external/hsIDltJuzqqUl4B1Gpu477rh-lhqCjw4jjwsUuMZkE4/https/media.discordapp.net/attachments/514197911022600194/721890586214268948/image0.gif?width=425&height=429");
         break;
-//      case "iq":
-//        request('https://inspirobot.me/api?generate=true', { json: true }, (err, res, body) => {
-//          if (err) { return console.log(err); }
-//        message.channel.send(body);
-//        });
-//        break;
+      case "iq":
+        request('https://inspirobot.me/api?generate=true', { json: true }, (err, res, body) => {
+          if (err) { return console.log(err); }
+        message.channel.send(body);
+        });
+        break;
       case "ship":
         message.channel.send("Oi ya wanna fooken ship real people mate no");
         break;
@@ -64,6 +64,10 @@ client.on("message", message => {
         break;
       case "thethird":
         message.channel.send("https://cdn.discordapp.com/attachments/765761162402070528/767112368006103070/video0.mov")
+        break;
+      case "forceleave":
+        if (isBotOwner)
+          message.guild.leave()
         break;
      }
 });
