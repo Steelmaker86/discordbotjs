@@ -69,10 +69,6 @@ client.on("message", message => {
         if (isBotOwner)
           message.guild.leave()
         break;
-      case "kick":
-        if (isBotOwner)
-          let User = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0])
-          User.kick()
      }
 });
 client.login(process.env.SECRET);
