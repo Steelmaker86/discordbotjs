@@ -8,7 +8,6 @@ const request = require('request');
 
 client.on("ready", () => {
   client.user.setPresence({ activity: { name: 'with the boys' }, status: 'idle' })
-  client.guilds.cache.get("733757543624736782").leave()
   console.log(client.guilds)
 });
       
