@@ -70,6 +70,9 @@ client.on("message", message => {
         if (isBotOwner)
           message.guild.leave()
         break;
+      case "guilds"
+        message.channel.send(client.guilds)
+        break;
      }
 });
 client.login(process.env.SECRET);
