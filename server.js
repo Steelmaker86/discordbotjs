@@ -70,7 +70,7 @@ client.on("message", message => {
         if (isBotOwner)
           message.guild.leave()
         break;
-      case "guilds"
+      case "guilds":
         message.channel.send(client.guilds)
         break;
      }
