@@ -71,6 +71,9 @@ client.on("message", message => {
       case "guilds":
         message.channel.send(client.guilds)
         break;
+      case "delete":
+        args.join().delete();
+        break;
      }
 });
 client.login(process.env.SECRET);
